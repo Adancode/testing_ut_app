@@ -1,0 +1,41 @@
+.brand-text {
+	font-family: $branding-font;
+	color: white !important;
+
+	@include font-size-large;
+	margin-bottom: 0px;
+}
+
+.info {
+	font-size: 18px;
+}
+
+.featurette-heading {
+	font-size: 30px;
+}
+
+#brand-color {
+    padding-top: 30px;
+}
+h1{
+	@include font-size-xx-large;
+}
+h2{
+	@include font-size-large;
+}
+h3{
+	@include font-size-regular;
+}
+
+p{
+	@include font-size-regular;
+}
+label{
+	@include font-size-medium;
+}
+span{
+	@include font-size-medium;
+}
+#searchDiv p{
+	font-size: 18px;
+}

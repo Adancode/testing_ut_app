@@ -1,0 +1,498 @@
+// =====================================================================
+
+// Landing Page 
+
+// =====================================================================
+
+//sign-up form container
+
+.main-title{
+	@include font-size-xxx-large;
+}
+.main-logo{
+	display: flex;
+	align-items: center;
+}
+.index-paragraph{
+	font-size: 17px;
+	width: 90%;
+}
+.sign-in-row{
+	display: flex;
+	justify-content: center;
+}
+.form-container {
+	background-color: #fff;
+    padding: 20px 20px 20px 20px;
+   	box-shadow: 2px 3px 8px rgba(0,0,0, 0.5);
+}
+
+.description-text {
+	margin-bottom: 40px;
+}
+
+.step-container{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px;
+}
+.step-item-container{
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.step-subheader{
+	margin-top: 0px;
+}
+.sign-in-divider{
+	margin: 20px 0px 20px 0
+}
+.index-dividers{
+	display: none;
+}
+.sign-in-text{
+	font-size: 18px;
+}
+
+//media query for sign-up form 
+@media (max-width: 399px){
+	#sign-up-form{
+		width: 100%;
+	}
+
+	#sign-up-form fieldset{
+		margin: 0% 5%;
+		width: 90%;
+		padding: 15px;
+	}
+}
+
+
+// =====================================================================
+
+// Dashboard
+
+// =====================================================================
+.search-results {
+	width: 100%;
+}
+.search-bar{
+	top: 80px;
+	background-color: #d66e14;
+	border: none;
+	height: 70px;
+}
+#results-section{
+	overflow-y:auto;
+	margin-top: 30px;
+}
+
+.individual-result {
+	margin: 10px 0;
+ 	position: relative;
+ 	padding: 10px;
+ 	border-left: 5px solid $employment-green;
+ 	display: flex;
+ 	align-items: center;
+ 	background-color: white;
+ 	border: 1px solid #ccc;
+ 	box-shadow: 0 4px 2px -2px #e4e4e4;
+}
+
+#dashboard-page {
+	background-color: #eee;
+}
+
+// vertical centering of main content
+
+.main-row {
+	padding-top: 20px;
+}
+.main-content{
+margin-top: 120px;
+}
+.main-content-dashboard{
+	margin-top: 120px;
+	margin-left: 40px;
+	margin-right: 40px;
+	// display: flex;
+}
+
+//Modal 
+
+.modal-content{
+	border-radius: 0px;
+}
+
+.modal-links {
+	background: linear-gradient(to bottom right, #F0C27B, #4B1248);
+	padding: 20px;
+	color: white;
+}
+
+.modal-body {
+	padding: 15px 15px 0 15px;
+}
+
+.row.modal-row {
+	padding: 10px 20px;
+}
+
+.modal-info{
+	padding-top: 20px;
+}
+
+.sub-modal-info > p {
+	font-weight: bold;
+}
+
+#results-company {
+	margin-top: 0px;
+	font-weight: 200;
+	font-style: italic;
+}
+#employment-status {
+	color: $employment-green;
+}
+
+#profile-section {
+	background-color: white;
+	border: 1px solid #ccc;
+	// padding: 30px 0;
+	margin-top: 40px;
+	z-index: 1000;
+    // position: fixed;
+    // left: 300px;
+    // width: 30%;
+    // margin-left: -20%;
+}
+
+#statistics-section{
+	margin-top: 40px;
+}
+
+.profile-container{
+	margin-top: 40px;
+}
+.profile-bottom{
+	margin-top: -100px;
+}
+.profile-bottom-info{
+	padding-left: 20px;
+	padding-right: 20px;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-areas {
+	margin-top: 17px;
+	display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+.form-group{
+	padding-right: 0px;
+	position: relative;
+	border-radius: none;
+
+}
+
+
+
+// Pie Chart  
+
+#employ-piechart{
+	width: 100%;
+	min-height: 210px;
+    padding-top: 25px;
+    border-bottom: 2px solid #cacaca;
+    background-color: white;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    z-index: 1000;
+}
+
+#interview-piechart{
+	width: 100%;
+	min-height: 210px;
+  	padding-top: 25px;
+  	background-color: white;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    z-index: 1000;
+}
+
+
+// =====================================================================
+
+// Profile
+
+// =====================================================================
+
+#profile-background {
+	height: 150px;
+	background: red; /* For browsers that do not support gradients */
+	background: linear-gradient(to bottom right, #F0C27B, #4B1248); /* Standard syntax */
+}
+
+.profile-heading {
+	padding-bottom: 40px;
+	margin-top: -110px;
+}
+
+#profile-media, #profile-about-me {
+	margin-bottom: 100px;
+}
+
+.profile-info {
+	border-radius: 5%;
+}
+.about-pair{
+    display: flex;
+    text-align: left;
+
+}
+.about-item-label{
+
+	width: 50%;
+}
+.about-item{
+	flex-grow: 1;
+	text-align: right;
+	word-break: break-all;
+}
+.about-icon{
+	color: $light-grey;
+	margin-top: 0px;
+}
+.about-section-container{
+	color: $dark-grey;
+}
+
+#profile-media, #profile-about-me, #profile-employment-info {
+	border: 1px solid #eee;
+    padding: 50px;
+    margin-top: 50px;
+    height: 270px;
+}
+#edit-form{
+	width: 400px;
+	margin: 50px auto;
+	position: relative;
+	text-align: center;
+}
+#edit-form fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+	
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
+.content{
+	margin-top: -20px;
+	padding-bottom: 70px;
+    padding-top: 27px;
+    background-color: white;
+    position: relative;
+    box-shadow: 0px 11px 19px rgba(0, 0, 0, 0.17);
+}
+.content{
+	margin-top: -20px;
+	padding-bottom: 70px;
+    padding-top: 27px;
+    position: relative;
+}
+.border-section{
+	border-left: 1px solid #eee;
+}
+.multi-input-row{
+	// display: flex;
+}
+.form-pair{
+	display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+.input-label{
+	width: 100%;
+	margin-top: 15px;
+}
+.input-field{
+	flex-grow: 1;
+	margin-right: 10px;
+	height: 50px;
+	padding: 10px;
+	border-radius: 0;
+	font-size: 18px;
+}
+.url-input{
+	width: 100%;
+}
+.edit-modal-content{
+	padding-bottom: 20px;
+	border-radius: 0;
+}
+.edit-modal-dialog{
+	width: 60%;
+}
+
+
+// =====================================================================
+
+// About
+
+// =====================================================================
+
+.about-header-text{
+	margin-top: 40px;
+}
+
+.featurette{
+	overflow: hidden;
+}
+.featurette-divider{
+	margin: 80px, auto;
+	height: 1px;
+	background-color: #ccc;
+}
+.about-text{
+	padding: 20px;
+}
+.profile-divider{
+	background-color: #d66e14;
+    height: 2px;
+}
+
+.person-row {
+	margin: 40px 0px;
+}
+
+@media (max-width: 767px){
+	.info{
+		padding: 0px 15px;
+    	text-align: center;
+	}
+}
+
+
+@media (max-width: 700px){
+	.navbar-text {
+		font-size: 18px;
+	}
+	.index-navbar{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+	}
+	.nav-pic{
+		display: none;
+	}
+	.about-header-text{
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+}
+
+@media (max-width: 400px){
+	.index-navbar{
+		flex-direction: column;
+	}
+	.about-header-text{
+		margin-top: 75%;
+	}
+}
+
+
+
+// =====================================================================
+
+// Profile
+
+// =====================================================================
+
+
+@media only screen and (max-width: 992px) {
+    .border-section {
+        border-left: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+	.profile-content{
+		width: 100%;
+	}
+	.profile-navbar{
+		background-color: transparent;
+		position: absolute;
+		top: 0;
+	}
+	.container{
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+// =====================================================================
+
+// Landing Page
+
+// =====================================================================
+@media only screen and (max-width: 992px){
+	.landing-icon{
+		width: 20%;
+	}
+	.index-dividers{
+		display: block;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-top: 2px solid #333;
+	}
+	.register-btn-container{
+		display: flex;
+		justify-content: center;
+	}
+	.register-link{
+		flex-grow: 1;
+	}
+}
+// =====================================================================
+
+// Dashboard
+
+// =====================================================================
+
+@media only screen and (max-width: 1280px){
+	#profile-section{
+		position: relative;
+		margin-left: auto;
+		height: auto;
+		width: 100%;
+		left: 0px;
+	}
+	.profile-section{
+		width: 100%;
+	}
+	.main-row{
+		padding-left: 0;
+	}
+	#results-section{
+		width: 100%;
+	}
+}
+
+
+
+
+

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<title>HookedIn</title>
+
+		<!-- FAVICON links -->
+		<link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="../assets/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../assets/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="../assets/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../assets/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../assets/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../assets/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../assets/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="../favicon.ico/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+		<link rel="manifest" href="../favicon.ico/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<!-- jQuery CDN -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Font Awesome -->
+		<script src="https://use.fontawesome.com/28a2b82478.js"></script>
+
+		<!-- Google Font -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:500|Source+Sans+Pro" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+
+		<!-- Custom CSS Link -->
+		<link rel="stylesheet" type="text/css" href="../stylesheets/css/style.css">
+	</head>
+	<body>
+		<main class="main-image">
+			<nav class="index-navbar navbar">
+				<div class="pull-left">
+					<a class="main-logo" href="/">
+						<p class="brand-text pull-left">Hooked</p>
+						<img class="logo-header" src="../assets/hookedIn_logo.png">
+					</a>
+				</div>
+			   <!--  <a class="navbar-brand" href="/">HookedIn</a> -->
+			   	<div class="navigation pull-right">
+				    <a class="about" href="/logout"><p class="navbar-text pull-right">Logout</p></a>
+				    <a class="about" href="/about"><p class="navbar-text pull-right">About</p></a>
+			    </div>
+    		</nav>	
+			<div class="container main-content">
+
+	    		<div class="row">
+	    			<div class ="col-xs-12 col-sm-6 col-md-7">
+						<h1 class="hidden-xs main-title">Welcome to HookedIn</h1>
+						<h2 class="col-xs-12 main-subtitle hidden-xs">Connect with your friends and other cohort students. Discover companies where you have a mutual connection.</h2>
+					</div>
+					<div class="col-xs-12 col-sm-5 col-md-4  col-sm-offset-1 col-md-offset-1">
+						  <div class="tab-content">
+						    <div role="tabpanel" class="tab-pane active" id="home">
+						    	<!-- Login Form -->
+							    <div class="form-container">
+									<div class="row">
+										<div class="col-sm-12">
+											<h3 class="text-center">Welcome Back!</h3>
+											<form class="sign-up" id="log-in" action="/" method="POST">
+											  <div class="form-group border">
+											    <label class="sr-only" for="email-input">Email address</label>
+											    <input type="email" name="sign-in-email" class="form-control input-field" id="email-input" placeholder="Email">
+											  </div>
+											  <div class="form-group">
+											    	<label class="sr-only" for="password-input">Password</label>
+											    	<input type="password" name="sign-in-password" class="form-control input-field" id="password-input" placeholder="Password">
+											  </div>
+											  <button type="submit" class="btn btn-default" id="btn-sign-in">Sign in</button>
+											  <hr class="sign-in-divider">
+											  <div class="text-center">
+											 	 <span class="col-md-12 sign-in-text">Don't have an account? </span>
+												</div>
+												<div class="text-center register-btn-container">
+											 	 <a class="col-sm-12 register-link" href="/signup">Register now!</a>
+											  </div>
+											</form>
+										</div>
+									</div>
+								</div>
+						    </div>
+						 
+						  </div>
+						</div>
+					</div>
+				</div> <!-- /row -->
+	    	</div>  <!-- /container -->
+		</main> <!-- /main image -->
+		<section class="step-container" id="about-hookedin">
+				<div class="row">
+						<h1 class="col-md-12 text-center step-container-header">How it works</h1>
+				</div>
+				<div class="row">
+					<div class="-col-xs-12 col-md-3 text-center step-item-container">
+						<img class="landing-icon" src="../assets/form.png">
+						<h1 class="">Step 1</h1>
+						<h2 class="step-subheader">Join the network</h2>
+						<p class="index-paragraph">
+							Tell us a little about yourself, and let others know what you're up to by filling out your custom profile. 
+						</p>
+				</div>
+				<hr class="index-dividers">
+				<div class="xs-col-12 col-md-3 text-center step-item-container">
+					<img class="landing-icon" src="../assets/search.png">
+					<h1 class="">Step 2</h1>
+					<h2 class="step-subheader">Search for graduates</h2>
+					<p class="index-paragraph">
+						Search the database for current students or alumni to learn about their career placement path. 
+					</p>
+				</div>
+				<hr class="index-dividers">
+				<div class="xs-col-12 col-md-3 text-center step-item-container">
+					<img class="landing-icon" src="../assets/conversation.png">
+					<h1 class="">Step 3</h1>
+					<h2 class="step-subheader">Make connections at companies</h2>
+					<p class="index-paragraph">
+						Learn about companies who have hired bootcamp graduates, reach out to current employees in your network for helpful advice, and find your next job.
+					</p>
+				</div>
+				<hr class="index-dividers">
+				<div class="xs-col-12 col-md-3 text-center step-item-container">
+					<img class="landing-icon" src="../assets/handshake.png">
+					<h1 class="">Step 4</h1>
+					<h2 class="step-subheader">Give back</h2>
+					<p class="index-paragraph">
+						Already have a job? Update your profile so currents students can search for you. Become a mentor and give back to the bootcamp community!
+					</p>
+				</div>
+			</div>
+		</section>
+	<footer class="text-center">
+		&copy; 2017 HookedIn
+    </footer>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

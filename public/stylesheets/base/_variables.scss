@@ -1,0 +1,26 @@
+// COLORS
+$orange: #d66e14;
+$dark-grey: #392f2d;
+$light-grey: #d3d3d3;
+$white: #ffffff;
+$employment-green: green;
+$dark-orange : darken(#d66e14, 8%);
+
+
+// FONTS
+$main-font: 'Source Sans Pro', sans-serif;
+$branding-font: 'PT Sans', sans-serif;
+
+
+// FONT WEIGHTS
+$font-weight-headings: 200;
+$font-weight-body: 400;
+
+// FONT SIZES
+h1, h2, h3, h4, h5, h6{
+	margin-top: 10px;
+}
+*{
+	font-family: $main-font;
+	font-weight: $font-weight-body;
+}
